@@ -24,11 +24,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Populating list items
+        lines.add(new Item(USER_TYPE));
         lines.add(new Item(AGENT_TYPE));
         lines.add(new Item(AGENT_TYPE));
         lines.add(new Item(USER_TYPE));
         lines.add(new Item(USER_TYPE));
         lines.add(new Item(AGENT_TYPE));
+        lines.add(new Item(USER_TYPE));
         lines.add(new Item(AGENT_TYPE));
 
         mRecyclerView = (RecyclerView) findViewById(R.id.mRecycler);
@@ -43,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
         // specify an adapter (see also next example)
         mAdapter = new LineAdapter(lines);
-
 
     }
 
